@@ -24,7 +24,7 @@
         <div id="todo-lists">
             <div class="list">
                 <h2 class="list-title">Groceries</h2>
-                <ol>
+                <ol id="grocery-list">
                     <li>
                         <label for="check-eggs">Eggs</label>
                         <input id="check-eggs" type="checkbox" class="complete-item" onclick="completeListItem(this)">
@@ -48,7 +48,7 @@
 
             <label for="text_input">Text Input:</label>
             <input id="text_input" type="text"></input>
-            <button>Add Item</button>
+            <button onclick="addListItem()">Add Item</button>
         </div>
     </div>
 </body>

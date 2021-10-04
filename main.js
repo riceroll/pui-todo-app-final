@@ -10,6 +10,16 @@ function deleteListItem(item) {
 }
 
 
+function addListItem() {
+  let list = document.getElementById("grocery-list");
+  let itemInput = document.getElementById("text_input");
+  let newItem = document.createElement("li");
+  newItem.appendChild(document.createTextNode(itemInput.value));
+  list.appendChild(newItem);
+  
+}
+
+
 function completeListItem(item) {
   if (item.checked) { // true if the input checkbox is checked
       item.parentNode.style.textDecoration = "line-through";
